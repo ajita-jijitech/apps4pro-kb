@@ -45,7 +45,7 @@ function autocomplete(inp, arr) {
                     b.innerHTML += arr[i]['title'];
                 }
                 b.innerHTML=`<span class="autoCompleteTitle">${b.innerHTML}</span>`
-                b.innerHTML += `<span class="autoCompleteTags"><a class="autocomplete-link" href="/tags#${arr[i]['tag']}"><span class=autocomplete-tag><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;${arr[i]['tag']}</span></a><span>`;
+                b.innerHTML += `<span class="autoCompleteTags"><a class="autocomplete-link" href="{{site.url}}/tags#${arr[i]['tag']}"><span class=autocomplete-tag><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;${arr[i]['tag']}</span></a><span>`;
                 b.innerHTML += "<input type='hidden' value='" + arr[i]['title'] + "'>";
                 b.addEventListener("click", function (e) {
                     inp.value = this.getElementsByTagName("input")[0].value;
