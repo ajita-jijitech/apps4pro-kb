@@ -1,0 +1,87 @@
+title: Apps4.Pro Knowledge Base
+description: Knowledge Base of all Apps4.Pro Products
+baseurl:  
+url: https://gandhi-jijitech.github.io/setting-theme 
+favIcon: assets/images/favicon.ico
+permalink: /:categories/:title
+
+content_type: Knowledge Base 
+use_authors: false
+logo: assets/images/kb.png
+meta_image: assets/images/kb.png
+brand_name: Apps4Pro
+header: How can we help you?
+subheader: Support and documentation for Apps4pro
+company_image: assets/images/jiji.png
+keywords: Test1,test2,test3
+image:
+  path: assets/images/kb.png
+  height: 100
+  width: 100
+twitter:
+  card: "summary"
+  username: "jijitech"
+facebook:
+  app_id: 987654321
+  publisher: 987654321   
+  admins: 987654321
+social:
+  name: JiJi Technologies
+  links:
+    - https://twitter.com/jijitech
+    - https://www.instagram/jijitech
+    - https://www.facebook.com/jijitech
+
+link-tags: true
+
+# Social Links
+twitter_username: jijitech
+facebook_page: jijitech
+email: support@jijitechnologies.com
+linkedin_page: jijitech
+instagram_username: jijitech
+port: 4001
+
+
+# Navivation
+nav_button: See Apps4.Pro Products
+nav_button_link: https://apps4.pro/
+
+# More Help
+help_one_title: Need help other than given?
+help_one_content: You can contact us
+help_one_button: Contact
+help_one_link: https://jijitechnologies.com/contact-us.aspx
+
+help_two_title: Twitter
+help_two_content: Feel free to tweet at us if you have suggestions or queries.
+help_two_button: Twitter
+help_two_link: https://twitter.com/jijitech
+
+help_three_title: Email
+help_three_content: Send an email of your query
+help_three_button: Email
+help_three_link: support@jijitechnologies.com
+
+help_four_title: Yammer
+help_four_content: Contact us from your office365 social network!
+help_four_button: Yammer
+help_four_link: https://www.yammer.com/jijitechnologies.com/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "assets/images/kb.png"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-seo-tag
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed

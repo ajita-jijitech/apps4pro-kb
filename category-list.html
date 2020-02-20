@@ -1,0 +1,29 @@
+---
+layout: default
+title: category-list
+type: Category
+---
+{% include header.html %}
+<div style="text-align: center;">
+    {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a href="#{{- category_name -}}" class="btns tag-btn"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;{{- category_name -}}&nbsp;({{ category | last | size }})</a>
+    {% endfor %}
+</div>
+<div id="full-tags-list">
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <h2 id="{{- category_name -}}" class="linked-section">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                &nbsp;{{- category_name -}}&nbsp;({{ category | last | size }})
+        </h2>
+        <div class="post-list">
+                {%- for post in site.categories[category_name] -%}
+                    <div class="tag-entry">
+                        <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                    </div>
+                {%- endfor -%}
+            </div>
+        {% endfor %}
+</div>
+

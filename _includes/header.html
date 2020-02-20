@@ -1,0 +1,16 @@
+<div class="header-bg">
+  <div class="container-full">
+    <div class="header ">
+      {% include nav.html %}
+      {% if page.type=="Search" or page.type=="Tags" or page.type=="Category" %}
+      {% include search.html %}
+      {% else %}
+      <header class="container grid-xl landing-header">
+          <div class="pb-16">
+            {% include search.html %}
+          </div>
+        </header>
+      {% endif %}
+    </div>
+  </div>
+</div>

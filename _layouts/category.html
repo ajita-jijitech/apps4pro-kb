@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include header.html %}
+<div class="container-full">
+  <div class="container grid-xl">
+    <div class="mt-12 show-md"></div>
+    <div class="mt-8"></div>
+    <div class="columns negative-m-xl">
+      <div class="column col-12">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ site.url }}">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+          </li>
+        </ul>
+        <h2 class="text-light text-bold headName heading" id="category_name">{{ page.category }}</h2>
+      </div>
+      {{ content }}
+    </div>
+  </div>
+</div>
+

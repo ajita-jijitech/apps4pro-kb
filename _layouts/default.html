@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body >
+    {{ content }}
+    <div style="display:flex;flex-wrap: wrap">{% include more-help.html %}</div>
+    <iframe src="https://www.jijitechnologies.com/footer.aspx" id="footeriframe" scrolling="no" width=100% height=460px> </iframe>
+    {% include footer.html %}
+    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    <script src="{{'/js/kb.js' | relative_url}}"></script>
+  </body>
+</html>
