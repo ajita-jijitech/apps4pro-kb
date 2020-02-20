@@ -175,6 +175,6 @@ function setIframeHeight()
     //     iframe.height=(scrollHeight+clientHeight)+ "px";
     // }
     // else{
-        iframe.height=scrollHeight+clientHeight + "px";
+        iframe.height=scrollHeight + "px";
     // }
 }
