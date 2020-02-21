@@ -14,8 +14,8 @@ type: Category
         {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <h2 id="{{- category_name -}}" class="linked-section">
-                <i class="fa fa-list-alt" aria-hidden="true"></i>
-                &nbsp;{{- category_name -}}&nbsp;({{ category | last | size }})
+                <div class="link-icon"><i class="fa fa-list-alt" aria-hidden="true"></i></div>
+                &nbsp;<div class="link-title">{{- category_name -}}</div>&nbsp;<div class="link-size">({{ category | last | size }})</div>
         </h2>
         <div class="post-list">
                 {%- for post in site.categories[category_name] -%}
