@@ -42,7 +42,27 @@
 <div class="column col-2 col-sm-12 p-4 mb-8 col-mx-auto">
   <h5>{{ site.help_five_title }}</h5>
   <p>{{ site.help_five_content }}</p>
-  <a href="{{ site.help_five_link }}" target="_blank">{{ site.help_five_button}} <i
+  <a onclick="openIframe()" target="_blank">{{ site.help_five_button}} <i
       class='uil uil-arrow-right arrow-hover'></i></a>
 </div>
+<script>
+
+  function openIframe() {
+    //$("#webchat").trigger("click");
+    $("#launchDiv").trigger("click");
+
+    var intervalFn = setInterval(function () {
+      console.log("Timer Called", document.getElementById("launchDiv"))
+      if (document.getElementById("launchDiv")) {
+        // console.log(document.getElementById("iframe"))
+        $("#webchat").trigger("click");
+        clearInterval(intervalFn)
+
+        // $("#launchDiv").trigger("click");
+      }
+    }, 2000);
+
+   
+  }
+</script>
 {% endif %}
