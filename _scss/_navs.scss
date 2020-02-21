@@ -40,6 +40,11 @@
     margin-left: $unit-4;
   }
 }
+.show-sm{
+  a.logo{
+    margin-bottom: -50px;
+  }
+}
 .logoHeading{
   user-select: none;
   display:inherit;
