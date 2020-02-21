@@ -47,17 +47,25 @@
   font-weight:normal;
   .four{
     font-size:80px;
-    font-family:dancingscript-regular,dancing script,cursive;
-    text-shadow:rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
     color:#941881;
+    width: 67px;
+    min-height: 93px;
+    pointer-events: none;
+    letter-spacing: normal;
+    text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+    font-family: dancingscript-regular,dancing script,cursive;
     }
     .apps{
-      font-size:60px;
-      font-family: raleway,sans-serif;
-      text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+      font-size:44px;
+      font-family: raleway,sans-serif !important;
+      text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
       font-family:raleway,sans-serif;
-      color:white;
+      color:#ffffff;
       line-height: 1.7;
+      font-weight: normal;
+      letter-spacing:normal;
+      margin:22px 0;
+      margin-left:-22px;
       }
 }
 @media only screen and (max-width:$size-sm){
@@ -67,6 +75,8 @@
     }
     .apps{
       font-size:28px;
+      margin:0;
+      margin-left:-22px;
     }
   }
 }
@@ -77,5 +87,7 @@ font-size:15px;
 } 
 .four{
 font-size:20px;
+margin:0;
+margin-left:-22px
 } }
 }
