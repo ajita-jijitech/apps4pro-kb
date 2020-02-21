@@ -24,9 +24,17 @@
  outline: none;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:$size-sm){
   .searchinput{
     width:250px;
+   }
+   .landing-header{
+     h1{
+       font-size:xx-large;
+     }
+     h4{
+       font-size: large;
+     }
    }
 }
 
