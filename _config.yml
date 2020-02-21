@@ -48,15 +48,15 @@ nav_button: See Apps4.Pro Products
 nav_button_link: https://apps4.pro/
 
 # More Help
-help_one_title: Need help other than given?
-help_one_content: You can contact us
-help_one_button: Contact
+help_one_title: Know more about us
+help_one_content: You can know who we are
+help_one_button: Explore
 help_one_link: https://jijitechnologies.com/contact-us.aspx
 
 help_two_title: Twitter
 help_two_content: Feel free to tweet at us if you have suggestions or queries.
 help_two_button: Twitter
-help_two_link: https://twitter.com/jijitech
+help_two_link: https://twitter.com/Apps4ProPlanner
 
 help_three_title: Email
 help_three_content: Send an email of your query
@@ -67,6 +67,11 @@ help_four_title: Yammer
 help_four_content: Contact us from your office365 social network!
 help_four_button: Yammer
 help_four_link: https://www.yammer.com/jijitechnologies.com/
+
+help_five_title: Web Chat
+help_five_content: Connect with our support team now!
+help_five_button: Webchat
+help_five_link: https://www.yammer.com/jijitechnologies.com/
 
 defaults:
   -
