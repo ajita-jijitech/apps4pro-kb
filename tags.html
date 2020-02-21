@@ -18,8 +18,8 @@ type: Tags
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
     <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+        <div class="link-icon"><i class="fa fa-tag" aria-hidden="true"></i></div>
+        &nbsp;<div class="link-title">{{- tag -}}</div>&nbsp;<div class="link-size">({{site.tags[tag].size}})</div>
     </h2>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
