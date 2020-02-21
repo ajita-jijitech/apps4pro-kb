@@ -3,7 +3,7 @@
 <div class="column col-12 text-center mt-16" style="flex: 0 0 100%">
   <h4>Still Need Help?</h4>
 </div><br>
-<div class="column col-3 col-sm-6 p-4 mb-8 col-mx-auto">
+<div class="column col-2 col-sm-6 p-4 mb-8 col-mx-auto">
   <h5>{{ site.help_one_title }}</h5>
   <p>{{ site.help_one_content }}</p>
   <a href="{{ site.help_one_link }}">{{ site.help_one_button }} <i class='uil uil-arrow-right arrow-hover'></i></a>
@@ -11,7 +11,7 @@
 {% endif %}
 {% if site.help_two_title == null %}
 {% else %}
-<div class="column col-3 col-sm-6 p-4 mb-8 col-mx-auto">
+<div class="column col-2 col-sm-6 p-4 mb-8 col-mx-auto">
   <h5>{{ site.help_two_title }}</h5>
   <p>{{ site.help_two_content }}</p>
   <a href="{{ site.help_two_link }}" target="_blank">{{ site.help_two_button}} <i
@@ -20,7 +20,7 @@
 {% endif %}
 {% if site.help_three_title == null %}
 {% else %}
-<div class="column col-3 col-sm-6 p-4 mb-8 col-mx-auto">
+<div class="column col-2 col-sm-6 p-4 mb-8 col-mx-auto">
   <h5>{{ site.help_three_title }}</h5>
   <p>{{ site.help_three_content }}</p>
   <a href="mailto:{{ site.email }}" target="_blank">{{ site.help_three_button}} <i
@@ -29,10 +29,20 @@
 {% endif %}
 {% if site.help_four_title == null %}
 {% else %}
-<div class="column col-3 col-sm-6 p-4 mb-8 col-mx-auto">
+<div class="column col-2 col-sm-6 p-4 mb-8 col-mx-auto">
   <h5>{{ site.help_four_title }}</h5>
   <p>{{ site.help_four_content }}</p>
   <a href="{{ site.help_four_link }}" target="_blank">{{ site.help_four_button}} <i
+      class='uil uil-arrow-right arrow-hover'></i></a>
+</div>
+{% endif %}
+
+{% if site.help_five_title == null %}
+{% else %}
+<div class="column col-2 col-sm-12 p-4 mb-8 col-mx-auto">
+  <h5>{{ site.help_five_title }}</h5>
+  <p>{{ site.help_five_content }}</p>
+  <a href="{{ site.help_five_link }}" target="_blank">{{ site.help_five_button}} <i
       class='uil uil-arrow-right arrow-hover'></i></a>
 </div>
 {% endif %}
