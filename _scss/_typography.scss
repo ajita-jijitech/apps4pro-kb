@@ -201,13 +201,33 @@ dl {
   h2{
     font-family: "Open Sans", sans-serif;
     text-rendering: geometricPrecision;
-    font-weight:normal;
   }
   margin-left:4%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .linked-section{
+    display:flex;
+    justify-content: start;
+  }
+  .link-icon{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex:0 0 3%;
+  }
+  .link-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .link-size{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex:0 0 15%;
+  }
 	.post-list{
 		margin-bottom:2%;
 		line-height: 2;
@@ -216,14 +236,13 @@ dl {
 		margin-left: 47px;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		white-space: nowrap;
+    white-space: nowrap;
+    padding-left:1%;
 		a {
       font-size: 20px;
       font-weight:normal;
 		  }
-		  a:hover{
-			  font-weight: bold;
-		  }
+		  
 		  .entry-date {
 			color: #808080;
 			font-style: italic;
