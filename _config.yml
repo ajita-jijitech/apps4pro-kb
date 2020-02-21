@@ -77,7 +77,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "https://ajita-jijitech.github.io/apps4pro-kb/assets/images/kb.png"
+      image: https://ajita-jijitech.github.io/apps4pro-kb/assets/images/kb.png
 
 # Build settings
 theme: minima
