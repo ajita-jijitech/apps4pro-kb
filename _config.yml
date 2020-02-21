@@ -71,8 +71,7 @@ help_four_link: https://www.yammer.com/jijitechnologies.com/
 help_five_title: Web Chat
 help_five_content: Connect with our support team now!
 help_five_button: Webchat
-help_five_link: https://www.yammer.com/jijitechnologies.com/
-
+help_five_link: https://teamsbotportal-w365beta.azurewebsites.net/WebBotClient?webchatid=ebb20cdb-f398-4346-bc6f-d1e566a8427e
 defaults:
   -
     scope:
