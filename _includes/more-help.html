@@ -48,21 +48,11 @@
 <script>
 
   function openIframe() {
-    //$("#webchat").trigger("click");
-    $("#launchDiv").trigger("click");
-
-    var intervalFn = setInterval(function () {
-      console.log("Timer Called", document.getElementById("launchDiv"))
-      if (document.getElementById("launchDiv")) {
-        // console.log(document.getElementById("iframe"))
-        $("#webchat").trigger("click");
-          $('#closeiconlauncher').css("display", "none")
-        clearInterval(intervalFn)
-
-        // $("#launchDiv").trigger("click");
-      }
-    }, 2000);
-
+    $('#launchDiv').trigger('click');      
+    setTimeout(()=>{
+      $("#closeiconlauncher").css("opacity","0");
+      $('#webchat').trigger('click');
+    }, 100)
 
   }
 </script>
