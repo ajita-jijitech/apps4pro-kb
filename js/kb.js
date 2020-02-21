@@ -154,15 +154,18 @@ function listofposts(posts) {
 }
 
 autocomplete(document.getElementById("search-input"), this.getfile("{{site.url}}/posts.json"));
-setIframeHeight();
-function setIframeHeight()
-{
-    var iframe=document.getElementById("footeriframe")
-    var scrollHeight=iframe.scrollHeight;
-    var scrollWidth=iframe.scrollWidth;
-    var clientHeight=iframe.clientHeight;
-    var clientWidth=iframe.clientWidth;
-    var differenceHw=clientWidth-clientHeight;
+// setIframeHeight();
+// function setIframeHeight()
+// {
+  
+//     var iframe=document.getElementById("footeriframe")
+//     var scrollHeight=iframe.scrollHeight;
+//     console.log(scrollHeight)
+//     var scrollWidth=iframe.scrollWidth;
+//     var clientHeight=iframe.clientHeight;
+//     console.log(clientHeight)
+//     var clientWidth=iframe.clientWidth;
+//     var differenceHw=clientWidth-clientHeight;
     // if(differenceHw>0 && differenceHw >scrollHeight)
     // {
     //     iframe.height=scrollHeight + "px";
@@ -175,6 +178,31 @@ function setIframeHeight()
     //     iframe.height=(scrollHeight+clientHeight)+ "px";
     // }
     // else{
-        iframe.height=scrollHeight+clientHeight + "px";
+        //iframe.height=scrollHeight+clientHeight + "px";
     // }
-}
+
+   
+//}
+
+
+// media query event handler
+if (matchMedia) {
+    const mq = window.matchMedia("(max-width: 600px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+    }
+ 
+    // media query change
+    function WidthChange(mq) {
+        var iframe=document.getElementById("footeriframe")
+    if (mq.matches) {
+        console.log("Mq",mq)
+       
+        var scrollHeight=iframe.scrollHeight;
+        var clientHeight=iframe.clientHeight;
+        iframe.height=scrollHeight+clientHeight+ "px";
+    } else {
+        iframe.height=456+ "px";
+    }
+    
+ }
